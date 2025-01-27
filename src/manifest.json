@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "DefundX",
+    "version": "1.0",
+    "description": "Prevents tracking and monetization on X/twitter",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "webRequest",
+      "declarativeNetRequest"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "*://*.x.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://x.com/*", "*://*.x.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    }
+  }

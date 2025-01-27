@@ -1,0 +1,88 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "client_event.json",
+        "domains": ["x.com"],
+        "resourceTypes": [
+          "xmlhttprequest",
+          "websocket",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "client_event",
+        "domains": ["x.com"],
+        "resourceTypes": [
+          "xmlhttprequest",
+          "websocket",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "update_subscriptions",
+        "domains": ["x.com"],
+        "resourceTypes": [
+          "xmlhttprequest",
+          "websocket",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "serviceworker.js",
+        "domains": ["x.com"],
+        "resourceTypes": ["script"]
+      }
+    },
+    {
+      "id": 5,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {
+        "urlFilter": "/service-worker.js",
+        "domains": ["x.com"],
+        "resourceTypes": ["script"]
+      }
+    },
+    {
+        "id": 6,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+          "urlFilter": "sw.js",
+          "domains": ["x.com"],
+          "resourceTypes": ["script"]
+        }
+      },
+      {
+        "id": 7,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+          "urlFilter": "events",
+          "domains": ["x.com"],
+          "resourceTypes": [
+            "xmlhttprequest",
+            "websocket",
+            "other"
+          ]
+        }
+      }
+  ]

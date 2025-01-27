@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DefundX</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      color: 'black';
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      margin-top: 0;
+      color: #1da1f2;
+    }
+    .status {
+      margin: 15px 0;
+      padding: 10px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+    .feature {
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+    .feature::before {
+      content: "✓";
+      color: #28a745;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>DefundX</h2>
+  <div class="status">
+    <p>It's time to defund X.</p>
+    <div>Blocks tracking scripts</div>
+    <div>Blocks analytics used for monetization and ads</div>
+    <div>Removes ad URL trackers</div>
+  </div>
+  <p style="font-size: 20px; color: red;">
+    <span id="incomeLoss"></span>
+  </p>
+  
+    <!-- Load external script -->
+    <script src="popup.js"></script>
+</body>
+</html>
